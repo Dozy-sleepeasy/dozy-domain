@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Dr. Dozy</title>
+    <link rel="stylesheet" href="dist/fullview.css">
+
+    <link rel="stylesheet" href="css/theme-2.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="dist/fullview.min.js"></script>
+</head>
+
+<body>    
+    <div class="floating-buttons">
+        <a href="https://www.instagram.com/dr.dozy_official/" class="icon-circle" target="_blank">
+        <i class="fab fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="http://pf.kakao.com/_MWpVb" class="icon-circle2" target="_blank">
+        <i class="fas fa-comment" aria-hidden="true"></i>
+        </a>
+    </div>
+        <div id="fullview">
+        
+        <div id="section1" class="active" data-tooltip="Section 1 Title">
+        <div class="logo">
+            <img src="src/logo.svg">
+        </div>
+        
+        <div class="title-left">
+        <h2>나는 평소 밤 <input type="number" id="numberin" min="0" max="24">시에 잠든다.</h2>
+        </div>
+        <a id="down" class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
+            
+        </div>
+        
+        
+        <div id="section2" data-tooltip="Section 2 Title">
+            
+            <div class="title-right">
+            <h2>개운한 아침을 위한 기상 시간은</h2>
+            
+            <h2 class="h2t"><p id="value">06</p>시 <p id="value2">30</p>분입니다.</h2>
+            </div>
+            
+            <div class="btm-text">
+            <h4>아침에 일어나기 힘드세요?</h4>
+            </div>
+            <a id="down" class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
+            
+        </div>
+        
+        
+        <div id="section3" data-tooltip="Section 3 Title">
+            
+        <div class="whole">
+        <h3>개운한 아침을 책임지는</h3>
+        <h3 style="font-weight: 500">나만의 수면 주치의 닥터도지가 런칭합니다!</h3>
+        <div class="rest">
+        <div class="highlighted">
+            <p class="pre high" style="">사전예약하고 30일간 도지의 프리미엄 케어 받으세요.</p></div>
+            
+        <h2 id="demo"></h2>
+            <form method="post" action="/preUser" class="order-form">
+                <div class="checkboxes">
+                    <label class="container">
+                        <input type="checkbox" value="iOS" id="iOS" checked="checked" name="iOS">iOS<span class="checkmark"></span>
+                    </label>
+
+                    <label class="container">
+                        <input type="checkbox" value="android" id="android" name="android">Android<span class="checkmark"></span>
+                    </label>
+                </div>
+
+                <div class="buttons2">
+                    <input type="tel" placeholder="휴대폰 번호 11자리 입력" id="phoneNum" name="phoneNum">
+                    <input type="button" name="name" value="보내기" id="send" onclick="sendEmail()" >
+                </div>
+
+                <div class="checkboxone">
+                    <label class="container" style="color:#999da0;">
+                        <input type="checkbox" value="iOS" id="iOS" checked="checked" >(주)플루비오파일이 고객님의 개인정보 수집/이용함에 동의합니다.<span class="checkmark"></span>
+                    </label>
+                </div>
+            </form>
+        </div>
+        </div>
+                <a id="down" class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
+        
+        </div>
+        
+        <div id="section4" data-tooltip="Section 4 Title">
+            <div class="toge">
+            <div class="lefty">
+                <h3>깊은 잠을 만드는 <br> 
+                        Dr.Dozy의 ASMR </h3>
+                <p>도지가 직접 개발한 수면 유도 소리, <br> 
+모노럴비트를 통해 쉽고 빠르게 깊은 잠으로 안내합니다. </p>
+            </div>
+            <div class="righty">
+                <img src="src/asmr.png">
+            </div>
+                </div>
+            <a id="down" class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
+        </div>
+        <div id="section5" data-tooltip="Section 5 Title">
+            <div class="toge">
+            <div class="lefty">
+                <h3>똑똑한 Dr.Dozy가 
+                      <br> 
+                       측정하는 수면 사이클</h3>
+                <p>내가 얼마나 잘 자고 있는지, <br>
+닥터도지의 똑똑한 인공지능이 수면 사이클을 측정합니다. </p>
+            </div>
+            <div class="righty">
+                <img src="src/detect.png">
+            </div>
+                </div>
+            <a id="down" class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
+        </div>
+        <div id="section6" data-tooltip="Section 6 Title">
+            <div class="toge">
+            <div class="lefty">
+                <h3>Dr.Dozy가 알려주는
+                      <br> 
+                       나를 위한 수면 솔루션 </h3>
+                <p>나만의 맞춤형 수면 레포트를 통해  <br>
+좋은 잠을 위한 수면 솔루션을 제공해드려요. </p>
+            </div>
+            <div class="righty">
+                <img src="src/solution.png">
+            </div>
+                </div>
+        <a id="down" class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
+        </div>
+        <div id="section7" data-tooltip="Section 7 Title">
+            <div class="toge">
+            <div class="lefty">
+                <h3>Dr.Dozy의 특별한 
+                  <br> 
+                   스마트 알람</h3>
+                <p>가장 개운하게 일어날 수 있도록,  <br>
+닥터 도지가 최적의 기상 시간을 찾아드려요. </p>
+            </div>
+            <div class="righty">
+                <img src="src/alarm.png">
+            </div>
+                </div>
+        <a id="down" class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
+        </div>
+    </div>
+
+<script type="text/javascript">
+        
+    // 이메일 보내기 함수
+    function sendEmail() {            
+        var type = '';
+
+        // input 값 받아오기
+        if (document.querySelector('#iOS').checked) {
+            type = 'ios';
+            console.log("ios");
+        }
+        else if (document.querySelector('#android').checked) {
+            type = 'android';
+            console.log("android");
+        }
+        // input 값 받아오기
+        const phoneNum = document.getElementById('phoneNum').value;
+        console.log(phoneNum);
+
+        // 양식 검증 : 빈칸이 있는지 체크 + 이메일 양식 체크
+        if(type === ''){
+            alert('핸드폰 기종을 선택해 주세요.')
+            return;
+        }
+
+        if(phoneNum === ''){
+            alert('전화번호를 입력해 주세요.')
+            return;
+        }
+
+
+
+        var form = {
+                "type" : type,
+                "phoneNum" : phoneNum
+        }
+        $.ajax({
+            url: 'preUser',
+            type: 'POST',
+            contentType: 'application/json; charset=UTF-8',
+            data: JSON.stringify(form),
+            dataType:"text",
+            success:function(data, jqXHR) {
+                console.log('success!');
+                if (type == 'ios') {
+                    location.replace("successi.html");
+                }
+                else if (type == 'android') {
+                    location.replace("successa.html");
+                }
+            },
+            error:function(jqXHR,error) {alert(error)},
+            complete:function(jqXHR) { }
+        })
+    }
+    </script>
+
+    <script>
+    var bool = false;
+    var wakeup = 0;
+    var newtime = 0;
+        
+    $('#iOS').on('click', function(){
+    $('#android').prop('checked', false); 
+    $('#iOS').prop('checked', true); 
+    });
+        
+    $('#android').on('click', function(){
+    $('#iOS').prop('checked', false); 
+    $('#android').prop('checked', true); 
+    });
+        
+    function animateValue(el, start, end) {
+      if (start === end) {
+        return; 
+      }
+      const duration = 3000;
+      const range = end - start;
+      let current = start;
+      const increment = end > start ? 1 : -1;
+      const stepTime = Math.abs(Math.floor(duration / range));
+      const timer = setInterval(() => {
+        current += increment;
+          if (el === null) {   return;    }
+          else{
+                el.innerHTML = current;
+                if (current == end) {
+                  clearInterval(timer);
+                }
+          }
+
+      }, stepTime)
+    }
+        
+    function toHHMMSS(sec_num) {
+    var hours   = Math.floor(sec_num);
+    var minutes = sec_num - Math.floor(sec_num)
+
+    if (hours   < 10) {hours   = "0"+hours;}
+    if (minutes == 0.5) {minutes = "30";}
+    
+    animateValue(document.getElementById('value'), 0, hours);
+    animateValue(document.getElementById('value2'), 0, minutes);
+    animateValue(document.getElementById('demo2'), 0, minutes);
+
+    }
+        
+    // Set the date we're counting down to
+    var countDownDate = new Date("Nov 26, 2021 20:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+      days = ("0" + days).slice(-2);
+      hours = ("0" + hours).slice(-2);
+      minutes = ("0" + minutes).slice(-2);
+      seconds = ("0" + seconds).slice(-2);
+        
+      // Output the result in an element with id="demo"
+      document.getElementById("demo").innerHTML = days + " : " + hours + " : "
+      + minutes + " : " + seconds;
+
+      // If the count down is over, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "사전예약 종료";
+      }
+    }, 1000);
+    
+    $(document).ready(function () {
+    
+        $(function() { $('#numberin').blur();  });
+
+        
+        $('#numberin').each(function() {
+           var elem = $(this);
+           elem.data('oldVal', elem.val());
+           elem.bind("propertychange change click keyup input paste", function(event){
+            if (elem.data('oldVal') != elem.val()) {
+            elem.data('oldVal', elem.val());
+            bool = true;
+            newtime = parseInt(elem.data('oldVal'));
+                if (newtime <= 12 && newtime >= 6) {
+                    wakeup = newtime + 7.5 - 12;
+                }
+                else if (newtime < 6 && newtime >= 0) {
+                    wakeup = newtime + 7.5;
+                }
+            
+            toHHMMSS(wakeup);
+            
+            $('.ca3-scroll-down-link').css({ "display": 'block'});
+            $('.btm-text').css({ "display": 'block'});
+            $('#value').css({ "animation": 'fade 3s linear forwards'});  
+            $('#value2').css({ "animation": 'fade 3s linear forwards'}); 
+            
+
+                
+            var fv = $("#fullview").fullView({
+            navbar: "#navbar",
+            dots: true,
+            dotsPosition: 'right',
+            dotsTooltips: true,
+            backToTop: bool,
+            mouseScrolling: bool,
+            keyboardScrolling: bool,
+            onScrollEnd: function (currentView, previousView, direction) {  },
+            onScrollStart: function (currentView, destinationView, direction) { },
+
+        });
+        
+        $("#down").click(function () { 
+            fv.data('fullView').scrollDown();
+            $(".value").counterUp({delay:10,time:1000});
+        });
+
+        
+        }
+       });
+     });
+
+        
+    });
+                      
+    </script>
+</body>
+
+</html>

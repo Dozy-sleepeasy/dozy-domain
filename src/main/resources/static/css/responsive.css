@@ -1,0 +1,180 @@
+@media only screen and (max-width: 1920px) {
+.h2t {padding-left: 270px;}  
+.title-right {    margin-top: 16%;    margin-bottom: 270px;}
+.whole {    width: 50%;}
+.highlighted {    width: 100%;}
+.checkboxes {    padding-left: 20px;}
+.buttons2 {    width: 100%;}
+.checkboxone {    padding-left: 20px;}
+.rest h2 {    margin-bottom: 120px;}
+.high {    margin:35px 0px 0px 0px;}
+.lefty {    margin-top: 23%;}
+.righty img {    width: 90%;}
+.whole2 {    width: 50%;}
+    .rest2 {width: 62%;}
+    .buttons3 {width: 70%;}
+}
+
+@media only screen and (max-width: 1680px) {
+.h2t {padding-left: 200px;} 
+.title-right {    margin-top: 18%;    margin-bottom: 200px;}
+.whole {    width: 60%;}
+.buttons2 {    width: 100%;}
+.lefty {    margin-top: 18%;}
+.righty img {    width: 80%;}
+.toge {    width: 70%;}
+    .rest2 {width: 70%;}
+    .buttons3 {width: 75%;}
+}
+
+@media only screen and (max-width: 1440px) {
+.h2t {padding-left: 120px;} 
+.title-right {    margin-top: 16%;    margin-bottom: 150px;}
+.whole {    width: 70%; margin-top: 5%;}
+.rest h2 {    margin-bottom: 80px;}
+.checkboxes {    padding-left: 20px;}
+.buttons2 {    width: 100%;}
+.lefty {    margin-top: 20%;}
+.righty img {    width: 90%;}
+    .rest2 {width: 90%;}
+}
+
+@media only screen and (max-width: 1366px) {
+.h2t {padding-left: 100px;} 
+.title-right {    margin-top: 13%;    margin-bottom: 100px;}
+.whole {    width: 70%; margin-top: 3%;}
+.whole h3 {    font-size: 36px;}
+.high {    margin:30px 0px 0px 0px;}
+.rest p {    font-size: 22px;}
+.rest h2 {    font-size: 70px; margin-bottom: 70px;}
+input[type="tel"]{      padding: 15px;    }
+    input[type="button"]#send{      padding: 15px;    }
+.checkboxes {    padding-left: 20px;}
+.buttons2 {    width: 100%;}
+.lefty {    margin-top: 20%;}
+.righty img {    width: 80%;}
+.lefty h3 {    font-size: 45px;}
+.lefty p {    font-size: 18px;    padding-top: 24px;}
+#telnum {    margin: 10px 0px 10px 0px;}
+    .rest2 {width: 100%;}
+}
+
+@media only screen and (max-width: 1280px) {
+.title-left {    font-size: 60px;    width: 65%;}
+.title-right {    font-size: 60px;    width: 65%;    margin-top: 12%;}
+.high {    margin:20px 0px 0px 0px;}
+.rest h2 { margin-bottom: 50px;}
+.container {  font-size: 18px;}
+.checkmark {  top: 3px;}
+#telnum {        margin: 10px 0px 10px 0px;    }
+}
+
+@media only screen and (max-width: 800px) {
+#numberin {    font-size: 60px;    width: 100px;border-radius: 0;-webkit-appearance: none;}
+#value {font-size: 60px;    width: 100px;}
+#value2 {font-size: 60px;    width: 100px;}
+.h2t {padding-left: 50px;}
+.logo {	line-height: 20px;	top: 30px;    left: 30px;}
+.logo img {width: 80%;}
+.whole2 {    width: 90%;    margin-top: 0%;}
+.rest2 {    width: 100%;}
+.title-left {    width: 59%;}
+.title-right {    margin-top: 30%;    width: 82%;     margin-bottom: 120px;}
+.h2t {     padding-left: 0px;}
+.whole {    width: 95%;    margin-top: 0%;}
+.rest {    width: 85%;}
+.rest h2 {    font-size: 44px;margin-bottom: 60px;}
+.lefty {        width: 100%;        margin: 0 auto;}
+.righty { width: 100%;margin: 0 auto;text-align: center;margin-top: 20px;}
+.lefty h3 {    font-size: 24px;}
+.lefty p {    font-size: 18px;}
+.toge {    width: 84%;}
+.righty img {    width: 80%;text-align: center;}
+.whole h3 {    font-size: 24px;}
+.rest p {font-size: 18px;}
+#telnum{font-size: 18px;}
+input[type="button"]#send{font-size: 18px;}
+.checkboxone{padding-left: 0px;}
+}
+
+@media only screen and (max-width: 426px) {
+    #fv-dots {display: none;}
+#numberin {    font-size: 56px;    width: 70px;}
+.title-left h2 {font-size: 26px;line-height: 1.5;}
+.title-right h2 {font-size: 26px;}
+#value {font-size: 40px;    width: 70px;}
+#value2 {font-size: 40px;    width: 50px;}
+.h2t {   width: 400px; display: inline-flex;align-items: flex-end;padding-left: 40px;}
+.logo {	line-height: 20px;	top: 25px;    left: 10px;}
+.logo img {width: 70%;}
+.whole2 {    width: 90%;    margin-top: 0%;}
+.rest2 {    width: 100%;}
+.title-left {    width: 73%;   margin-top: -100px;  margin-top: -120px; }
+.title-right {    margin-top: 26%;    width: 100%;     margin-bottom: 200px;}
+.title-right-one {    width: 100%;margin:0 auto;}
+.title-right-two {    width: 100%; margin: 0 auto;}
+#section2 .btm-text h4 {    font-size: 14px;    font-weight: 200;}
+.whole {    width: 100%;    margin-top: -20px;}
+.rest {    width: 100%;}
+.rest h2 {    font-size: 48px;margin-bottom: 30px;margin-top: 30px;}
+.lefty {        width: 100%;        margin: 0 auto;margin-top: -110px;}
+.righty { width: 100%;margin: 0 auto;text-align: center;margin-top: 50px;}
+.lefty h3 {    font-size: 24px;    font-weight: 600;}
+.lefty p {    font-size: 14px;padding-top: 12px;font-weight: 200;}
+.toge {    width: 98%;}
+.righty img {    width: 60%;text-align: center;}
+.whole h3 {    font-size: 19px;}
+.rest p {font-size: 15px;}
+#telnum{font-size: 12px;margin:0;}
+input[type="button"]#send{font-size: 12px;padding: 15px;}
+.checkboxone{padding-left: 10px;}
+.checkboxes {padding-left: 10px;}
+.container {    font-size: 12px;}
+.buttons2 {margin-top:10px;}
+#down {    bottom: 20px;}
+.ca3-scroll-down-link {height: 30px; width: 30px; line-height: 30px;}
+.order-form {
+    margin-top: 90px;
+}
+.whole2 h3 {
+    font-size: 24px;
+}
+.rest2 p {
+    font-size: 14px;
+}
+    .pre {
+        font-size: 12px;
+    }
+    .ft {
+    font-size: 20px;
+    margin: 20px 0px 10px 0px;
+}
+    .buttons3 {
+    width: 75%;
+}
+    input[type=button]#survey {
+    width: 100%;
+    height: 100%;
+    padding: 14px;
+    font-size: 14px;
+}
+    .ft2 {
+    margin:10px 0px 30px 0px
+}
+    .buttons img{
+    width:40%;
+}
+    input[type=button]#survey {
+        -webkit-appearance: none;
+        -webkit-border-radius: 37px;
+        margin-left: 0px;
+    }
+    .whole2 {
+        margin-top:-120px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+
+}
+
