@@ -69,30 +69,23 @@
         <div class="highlighted">
             <p class="pre high" style="">사전예약하고 30일간 도지의 프리미엄 케어 받으세요.</p></div>
             
-        <h2 id="demo"></h2>
-            <form method="post" action="/preUser" class="order-form">
-                <div class="checkboxes">
-                    <label class="container">
-                        <input type="checkbox" value="iOS" id="iOS" checked="checked" name="iOS">iOS<span class="checkmark"></span>
-                    </label>
-
-                    <label class="container">
-                        <input type="checkbox" value="android" id="android" name="android">Android<span class="checkmark"></span>
-                    </label>
-                </div>
-
-                <div class="buttons2">
-                    <input type="tel" placeholder="휴대폰 번호 11자리 입력" id="phoneNum" name="phoneNum">
-                    <input type="button" name="name" value="보내기" id="send" onclick="sendEmail()" >
-                </div>
-
-                <div class="checkboxone">
-                    <label class="container" style="color:#999da0;">
-                        <input type="checkbox" value="iOS" id="iOS" checked="checked" >(주)플루비오파일이 고객님의 개인정보 수집/이용함에 동의합니다.<span class="checkmark"></span>
-                    </label>
-                </div>
-            </form>
+        <h2 id="demo"></h2> 
+        <form method="post" action="#" class="order-form">
+        <div class="checkboxes">
+        <label class="container">
+        <input type="checkbox" value="iOS" id="iOS" checked="checked" name="iOS">iOS<span class="checkmark"></span></label>
+        
+        <label class="container">
+        <input type="checkbox" value="android" id="android" name="android">Android<span class="checkmark"></span></label>
         </div>
+        <div class="buttons2">
+        <input type="tel" placeholder="휴대폰 번호 11자리 입력" id="telnum" name="telnum">
+        <input type="button" name="name" value="보내기" id="send" onclick="sendEmail()" ></div>
+        
+        <div class="checkboxone">
+        <label class="container" style="color:#999da0;">
+        <input type="checkbox" value="iOS" id="iOS" checked="checked" >(주)플루비오파일이 고객님의 개인정보 수집/이용함에 동의합니다.<span class="checkmark"></span></label></div></form>
+            </div>
         </div>
                 <a id="down" class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
         
@@ -326,8 +319,7 @@
             $('.btm-text').css({ "display": 'block'});
             $('#value').css({ "animation": 'fade 3s linear forwards'});  
             $('#value2').css({ "animation": 'fade 3s linear forwards'}); 
-            
-
+        
                 
             var fv = $("#fullview").fullView({
             navbar: "#navbar",
