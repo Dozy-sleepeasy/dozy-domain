@@ -28,9 +28,7 @@ body {
 */
 
 #navbar {
-    position: fixed;
     width: 100%;
-    padding: 20px;
 }
 
 #navbar ul {
@@ -79,6 +77,8 @@ input {
     font-weight: 600;
 }
 
+#down {
+}
 
 form {
     display: flex;

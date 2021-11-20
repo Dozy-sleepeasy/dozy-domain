@@ -1,0 +1,67 @@
+/* 1920×1080 */
+@media only screen and (max-width: 1920px){
+.lefty {    margin-top: 10%;}
+.righty2 {padding-top: 5%;}
+.righty {padding-top: 5%;}
+}
+
+/* 1366×768 */
+@media only screen and (max-width: 1366px){
+.whole h3 {    font-size: 24px;}
+.whole3 {    margin-top: 5%;}
+.toge {    width: 100%;}
+.lefty {    margin-top: 15%;    margin-left: 10%;    width: 35%;}    
+.righty2 {padding-top: 10%;}
+.righty {padding-top: 15%;}
+.rest h2 {margin-top: 100px;}
+}
+
+/* 1024×640 */    
+@media only screen and (max-width: 1024px){
+.whole {width: 80%;}
+.whole h3 {    font-size: 18px;}
+.whole h4 {    font-size: 24px;}
+.rest h2 {margin-bottom: 50px;margin-top: 50px; font-size: 48px}
+.lefty h3 {    font-size: 36px;}
+.whole3 h4 {    font-size: 20px;}
+.whole3 h3 {    font-size: 36px;}
+button.start_bt {        width: 170px;        font-size: 18px;    }
+input[type="tel"] {font-size: 18px;}
+input[type="button"]#send {font-size: 18px;}
+    
+}
+
+/* 800×1280 */ 
+@media only screen and (max-width: 800px){
+.whole3 {    float: left;    width: 90%;}
+.whole4 {    width: 90%;    float: left;    margin-top: 10%;    margin-left: 7%;}
+.jump {    margin-top: 50px;}
+button.start_bt {        width: 150px;        font-size: 18px;    }
+.lefty {width: 60%;margin-top: 20px;}
+.righty2 {width: 100%;padding-left: 10%;}
+.righty {width: 100%;padding-left: 10%;}
+}
+
+/* 450×920 */ 
+@media only screen and (max-width: 450px){
+button.start_bt { width: 100px;        font-size: 16px;  padding:10px;  }
+.start {line-height: 0px;top:30px;right:30px;}
+    .righty2 {padding-left: 0%;}
+    .whole3 {margin-top:0;margin-left: 0px;}
+    .whole4 img {animation: none;}
+    .whole4 {margin-top: 5%;}
+    .lefty h3 {    font-size: 24px;}
+    .lefty p {    font-size: 12px;}
+    .righty2 img {width: 94%;}
+    .lefty {width: 90%;margin-left: 0px;margin-top:0px;}
+    .toge {height: 500px;}
+    .whole {width:95%;}
+    .container {font-size: 10px;}
+    .rest h2 {font-size: 40px;}
+    .checkmark {height: 10px; width: 10px;}
+    .checkboxone {padding-left: 20px;margin-top:-10px;}
+    #telnum {margin: 5px 0px;font-size: 14px;}
+    input[type="button"]#send {font-size: 14px;}
+    .whole2 h3 {    font-size: 24px;}
+    
+}

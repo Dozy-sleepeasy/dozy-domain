@@ -17,7 +17,8 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-    <script src="../dist/fullview.min.js"></script>
+    <script src="dist/fullview.min.js"></script>
+
 </head>
 
 <body>    
@@ -97,7 +98,7 @@
                 <h3>깊은 잠을 만드는 <br> 
                         Dr.Dozy의 ASMR </h3>
                 <p>도지가 직접 개발한 수면 유도 소리, <br> 
-모노럴비트를 통해 쉽고 빠르게 깊은 잠으로 안내합니다. </p>
+                    모노럴비트를 통해 쉽고 빠르게 깊은 잠으로 안내합니다. </p>
             </div>
             <div class="righty">
                 <img src="src/asmr.png">
@@ -154,8 +155,12 @@
 
 <script type="text/javascript">
         
-    // 이메일 보내기 함수
-    function sendEmail() {            
+            (function() {
+            emailjs.init("user_FHcm6IarN4nZTRxxaHUHd");
+        })();
+        
+        
+        function sendEmail() {            
         var type = '';
 
         // input 값 받아오기
@@ -168,7 +173,7 @@
             console.log("android");
         }
         // input 값 받아오기
-        const phoneNum = document.getElementById('phoneNum').value;
+        const phoneNum = document.getElementById('telnum').value;
         console.log(phoneNum);
 
         // 양식 검증 : 빈칸이 있는지 체크 + 이메일 양식 체크
@@ -182,8 +187,6 @@
             return;
         }
 
-
-
         var form = {
                 "type" : type,
                 "phoneNum" : phoneNum
@@ -195,13 +198,7 @@
             data: JSON.stringify(form),
             dataType:"text",
             success:function(data, jqXHR) {
-                console.log('success!');
-                if (type == 'ios') {
-                    location.replace("successi.html");
-                }
-                else if (type == 'android') {
-                    location.replace("successa.html");
-                }
+                window.open("success.html", '_blank').focus();
             },
             error:function(jqXHR,error) {alert(error)},
             complete:function(jqXHR) { }
@@ -260,7 +257,7 @@
     }
         
     // Set the date we're counting down to
-    var countDownDate = new Date("Nov 26, 2021 20:00:00").getTime();
+    var countDownDate = new Date("Dec 1, 2021 20:00:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -319,7 +316,8 @@
             $('.btm-text').css({ "display": 'block'});
             $('#value').css({ "animation": 'fade 3s linear forwards'});  
             $('#value2').css({ "animation": 'fade 3s linear forwards'}); 
-        
+            
+
                 
             var fv = $("#fullview").fullView({
             navbar: "#navbar",

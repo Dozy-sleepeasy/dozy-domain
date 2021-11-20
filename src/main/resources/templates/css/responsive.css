@@ -97,7 +97,7 @@ input[type="button"]#send{font-size: 18px;}
 .checkboxone{padding-left: 0px;}
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 442px) {
     #fv-dots {display: none;}
 #numberin {    font-size: 56px;    width: 70px;}
 .title-left h2 {font-size: 26px;line-height: 1.5;}
@@ -133,45 +133,17 @@ input[type="button"]#send{font-size: 12px;padding: 15px;}
 .buttons2 {margin-top:10px;}
 #down {    bottom: 20px;}
 .ca3-scroll-down-link {height: 30px; width: 30px; line-height: 30px;}
-.order-form {
-    margin-top: 90px;
-}
-.whole2 h3 {
-    font-size: 24px;
-}
-.rest2 p {
-    font-size: 14px;
-}
-    .pre {
-        font-size: 12px;
-    }
-    .ft {
-    font-size: 20px;
-    margin: 20px 0px 10px 0px;
-}
-    .buttons3 {
-    width: 75%;
-}
-    input[type=button]#survey {
-    width: 100%;
-    height: 100%;
-    padding: 14px;
-    font-size: 14px;
-}
-    .ft2 {
-    margin:10px 0px 30px 0px
-}
-    .buttons img{
-    width:40%;
-}
-    input[type=button]#survey {
-        -webkit-appearance: none;
-        -webkit-border-radius: 37px;
-        margin-left: 0px;
-    }
-    .whole2 {
-        margin-top:-120px;
-    }
+.order-form {    margin-top: 90px;}
+.whole2 h3 {    font-size: 24px;}
+.rest2 p {    font-size: 14px;}
+.pre {        font-size: 12px;    }
+.ft {    font-size: 20px;    margin: 20px 0px 10px 0px;}
+.buttons3 {    width: 75%;}
+input[type=button]#survey {    width: 100%;    height: 100%;    padding: 14px;    font-size: 14px;}
+.ft2 {    margin:10px 0px 30px 0px}
+.buttons img{    width:40%;}
+input[type=button]#survey {        -webkit-appearance: none;        -webkit-border-radius: 37px;        margin-left: 0px;    }
+.whole2 {        margin-top:-120px;    }
 }
 
 @media only screen and (max-width: 375px) {

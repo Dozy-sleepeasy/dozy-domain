@@ -14,16 +14,27 @@ public class UserController {
         this.preUserService = preUserService;
     }
 
-    @GetMapping("/home")
+    @GetMapping("")
     public String home(){
         return "index3.html";
     }
 
+    @GetMapping("/home")
+    public String intro(){return "index.html";}
+
+
     @RequestMapping(value= "preUser", method = RequestMethod.POST)
     public String createPreUser(@RequestBody PreUserRequest preUserRequest){
-        System.out.println(preUserRequest.getType());
-        System.out.println(preUserRequest.getPhoneNum());
         preUserService.createPreUser(preUserRequest);
         return "index3.html";
     }
 }
+//
+// Virual Memory Simulator Homework
+// One-level page table system with FIFO and LRU
+// Two-level page table system with LRU
+// Inverted page table with a hashing system
+// Submission Year:
+// Student Name:
+// Student Number:
+//
