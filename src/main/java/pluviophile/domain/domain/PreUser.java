@@ -17,7 +17,7 @@ public class PreUser {
     private Long id;
     @Column
     private String type;
-    @Column
+    @Column(unique = true)
     private String phoneNum;
 
 }
