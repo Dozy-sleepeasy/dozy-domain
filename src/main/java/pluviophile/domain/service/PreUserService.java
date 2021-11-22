@@ -8,6 +8,8 @@ import pluviophile.domain.domain.PreUser;
 import pluviophile.domain.dto.PreUserRequest;
 import pluviophile.domain.repository.PreUserRepository;
 
+import java.util.Optional;
+
 @Service
 @Transactional
 public class PreUserService {
@@ -20,10 +22,13 @@ public class PreUserService {
 
     @Transactional
     public void createPreUser(PreUserRequest preUserRequest) {
-        PreUser user = PreUser.builder()
-                .type(preUserRequest.getType())
-                .phoneNum(preUserRequest.getPhoneNum())
-                .build();
-        preUserRepository.save(user);
+        Optional<PreUser> existuser = preUserRepository.findByPhoneNum(preUserRequest.getPhoneNum());
+        if(existuser.isEmpty()) {
+            PreUser user = PreUser.builder()
+                    .type(preUserRequest.getType())
+                    .phoneNum(preUserRequest.getPhoneNum())
+                    .build();
+            preUserRepository.save(user);
+        }
     }
 }
