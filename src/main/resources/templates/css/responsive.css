@@ -117,7 +117,7 @@ input[type="button"]#send{font-size: 18px;}
 .whole {    width: 100%;    margin-top: -20px;}
 .rest {    width: 100%;}
 .rest h2 {    font-size: 48px;margin-bottom: 30px;margin-top: 30px;}
-.lefty {        width: 100%;        margin: 0 auto;margin-top: -110px;}
+.lefty {        width: 100%;        margin: 0 auto;margin-top: 0px;}
 .righty { width: 100%;margin: 0 auto;text-align: center;margin-top: 50px;}
 .lefty h3 {    font-size: 24px;    font-weight: 600;}
 .lefty p {    font-size: 14px;padding-top: 12px;font-weight: 200;}
