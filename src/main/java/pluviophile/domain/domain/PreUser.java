@@ -21,4 +21,6 @@ public class PreUser {
     private String phoneNum;
     @Column
     private String page;
+    @Column
+    private String url;
 }
