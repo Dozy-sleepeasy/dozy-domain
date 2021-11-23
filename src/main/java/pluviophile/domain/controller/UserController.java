@@ -22,11 +22,16 @@ public class UserController {
     @GetMapping("/home")
     public String intro(){return "index.html";}
 
-
-    @RequestMapping(value= "preUser", method = RequestMethod.POST)
-    public String createPreUser(@RequestBody PreUserRequest preUserRequest){
-        preUserService.createPreUser(preUserRequest);
+    @RequestMapping(value= "/preUser/a", method = RequestMethod.POST)
+    public String createPreUserA(@RequestBody PreUserRequest preUserRequest){
+        preUserService.createPreUser(preUserRequest, "a");
         return "index3.html";
+    }
+
+    @RequestMapping(value= "/preUser/b", method = RequestMethod.POST)
+    public String createPreUserB(@RequestBody PreUserRequest preUserRequest){
+        preUserService.createPreUser(preUserRequest, "b");
+        return "index.html";
     }
 }
 //

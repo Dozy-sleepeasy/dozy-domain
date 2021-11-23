@@ -21,12 +21,13 @@ public class PreUserService {
     }
 
     @Transactional
-    public void createPreUser(PreUserRequest preUserRequest) {
+    public void createPreUser(PreUserRequest preUserRequest, String page) {
         Optional<PreUser> existuser = preUserRepository.findByPhoneNum(preUserRequest.getPhoneNum());
         if(existuser.isEmpty()) {
             PreUser user = PreUser.builder()
                     .type(preUserRequest.getType())
                     .phoneNum(preUserRequest.getPhoneNum())
+                    .page(page)
                     .build();
             preUserRepository.save(user);
         }
