@@ -19,5 +19,6 @@ public class PreUser {
     private String type;
     @Column(unique = true)
     private String phoneNum;
-
+    @Column
+    private String page;
 }
