@@ -20,6 +20,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
     <script src="dist/fullview.min.js"></script>
     <script src="https://kit.fontawesome.com/2d41a59536.js" crossorigin="anonymous"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XRT4PQN3Q6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XRT4PQN3Q6');
+    </script>
+
     <!-- Facebook Pixel Code -->
 <script>
   !function(f,b,e,v,n,t,s)
@@ -229,7 +238,7 @@
                 "url": url,
         }
         $.ajax({
-            url: '/preUser/a',
+            url: '/preUser/home',
             type: 'POST',
             contentType: 'application/json; charset=UTF-8',
             data: JSON.stringify(form),
@@ -244,7 +253,7 @@
     </script>
 
     <script>
-           var bool = false;
+        var bool = false;
     var wakeup = 0;
     var newtime = 0;
         
