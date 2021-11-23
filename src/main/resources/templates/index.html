@@ -221,10 +221,12 @@
             alert('전화번호를 입력해 주세요.')
             return;
         }
+        var url = window.location.href;
 
         var form = {
                 "type" : type,
-                "phoneNum" : phoneNum
+                "phoneNum" : phoneNum,
+                "url": url,
         }
         $.ajax({
             url: '/preUser/a',

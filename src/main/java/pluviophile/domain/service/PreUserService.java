@@ -27,6 +27,7 @@ public class PreUserService {
             PreUser user = PreUser.builder()
                     .type(preUserRequest.getType())
                     .phoneNum(preUserRequest.getPhoneNum())
+                    .url(preUserRequest.getUrl())
                     .page(page)
                     .build();
             preUserRepository.save(user);

@@ -33,6 +33,7 @@ public class UserController {
         preUserService.createPreUser(preUserRequest, "b");
         return "index.html";
     }
+
 }
 //
 // Virual Memory Simulator Homework

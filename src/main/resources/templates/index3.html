@@ -205,9 +205,12 @@
             return;
         }
 
+        var url = window.location.href;
+
         var form = {
-                "type" : type,
-                "phoneNum" : phoneNum
+            "type" : type,
+            "phoneNum" : phoneNum,
+            "url": url,
         }
         $.ajax({
             url: '/preUser/b',

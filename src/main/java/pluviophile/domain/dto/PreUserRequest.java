@@ -10,5 +10,6 @@ import lombok.NoArgsConstructor;
 public class PreUserRequest {
     private String type;
     private String phoneNum;
+    private String url;
 }
 
