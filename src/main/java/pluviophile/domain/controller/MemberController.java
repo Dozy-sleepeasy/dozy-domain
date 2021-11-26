@@ -40,12 +40,19 @@ public class MemberController {
         return "loginForm";
     }
 
-    @RequestMapping(value = "/admin/userList", method = RequestMethod.GET)
+    @GetMapping("/admin/userList")
     public String userList(Model model) throws Exception{
         List<PreUser> users = preUserService.getPreUsers();
         model.addAttribute("userList", users);
         return "userList";
     }
+
+//    @RequestMapping(value = "/admin/userList", method = RequestMethod.GET)
+//    public String userList(Model model) throws Exception{
+//        List<PreUser> users = preUserService.getPreUsers();
+//        model.addAttribute("userList", users);
+//        return "userList";
+//    }
 
 }
 
