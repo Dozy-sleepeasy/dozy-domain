@@ -37,7 +37,7 @@ public class MemberController {
 
     @GetMapping("/member/login")
     public String login() {
-        return "login";
+        return "loginForm";
     }
 
     @RequestMapping(value = "/admin/userList", method = RequestMethod.GET)
