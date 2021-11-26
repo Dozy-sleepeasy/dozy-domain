@@ -3,6 +3,7 @@ package pluviophile.domain.domain;
 import lombok.*;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -23,4 +24,6 @@ public class PreUser extends BaseTime{
     private String page;
     @Column
     private String url;
+    @Column
+    private LocalDateTime created;
 }

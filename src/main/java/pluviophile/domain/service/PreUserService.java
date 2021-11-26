@@ -8,6 +8,7 @@ import pluviophile.domain.domain.PreUser;
 import pluviophile.domain.dto.PreUserRequest;
 import pluviophile.domain.repository.PreUserRepository;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
@@ -30,6 +31,7 @@ public class PreUserService {
                     .phoneNum(preUserRequest.getPhoneNum())
                     .url(preUserRequest.getUrl())
                     .page(page)
+                    .created(LocalDateTime.now())
                     .build();
             preUserRepository.save(user);
         }
