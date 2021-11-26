@@ -40,7 +40,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .antMatchers("/**").permitAll()
                 .and()
                     .requiresChannel()
-                    .antMatchers("/meember/login").requiresSecure()
+                    .antMatchers("/member/login").requiresSecure()
                 .and()
                     .formLogin()     // 로그인 설정
                     .loginPage("/member/login")
