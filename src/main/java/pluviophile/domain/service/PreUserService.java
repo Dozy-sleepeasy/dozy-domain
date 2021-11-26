@@ -8,6 +8,7 @@ import pluviophile.domain.domain.PreUser;
 import pluviophile.domain.dto.PreUserRequest;
 import pluviophile.domain.repository.PreUserRepository;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -32,5 +33,11 @@ public class PreUserService {
                     .build();
             preUserRepository.save(user);
         }
+    }
+    @Transactional
+    public List<PreUser> getPreUsers(){
+        List<PreUser> preUsers = preUserRepository.findAll();
+        System.out.println(preUsers.size());
+        return preUsers;
     }
 }

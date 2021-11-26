@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="board/layout/basic">
+
+<!-- header.html 안에 있는 title 사용 -->
+<th:block layout:fragment="title">
+    <title>This page is a list page</title>
+</th:block>
+
+<!-- body.html 안에 있는 search 영역에 내용 추가 -->
+<th:block layout:fragment="search">
+    <form action="#" id="searchform-header" class="searchform js__toggle active pull-right">
+        <input type="search" placeholder="Search..." class="input-search">
+        <button class="mdi mdi-magnify button-search" type="submit">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+    </form>
+</th:block>
+
+<!-- body.html 안에 있는 content 영역에 내용 추가 -->
+<!-- th:href : <a>태그의 href 속성과 동일하며, Context Path를 포함한다. -->
+<th:block layout:fragment="content">
+    <div class="table-responsive clearfix">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>index</th>
+                <th>type</th>
+                <th>phoneNum</th>
+                <th>createdDate</th>
+                <th>url</th>
+            </tr>
+            </thead>
+            <!-- 게시글 목록이 출력되는 영역 -->
+            <!-- th:if : 일반 if문과 같다 -->
+            <!-- th:unless : else문이다. if문의 내용을 똑같이 적어줘야된다. -->
+            <tbody>
+            <tr th:if="${not #lists.isEmpty( userList )}" th:each="row : ${userList}">
+                <td th:text="${row.id}"></td>
+                <td th:text="${row.type}"></td>
+                <td th:text="${row.phoneNum}"></td>
+                <td th:text="${row.url}"></td>
+                <td th:text="${row.createdDate}"></td>
+            </tr>
+            <tr th:unless="${not #lists.isEmpty( userList )}">
+                <td colspan="5">조회된 결과가 없습니다.</td>
+            </tr>
+            </tbody>
+        </table>
+
+
+        <!-- body.html 안에 있는 pageing 사용 -->
+        <th:block layout:fragment="paging">
+            <nav aria-label="Page navigation" class="text-center">
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </th:block>
+    </div>
+</th:block>
+<style>
+    table {
+        width: 100%;
+        border: 1px solid #444444;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #444444;
+    }
+</style>
+</html>

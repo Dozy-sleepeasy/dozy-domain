@@ -10,7 +10,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @Builder
 @Entity
-public class PreUser {
+public class PreUser extends BaseTime{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) // 연결된 db의 넘버링 전략을 따라감

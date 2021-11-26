@@ -16,23 +16,25 @@ public class UserController {
 
     @GetMapping("")
     public String home(){
-        return "index3.html";
+        return "home1";
     }
 
     @GetMapping("/home")
-    public String intro(){return "index.html";}
-
-    @RequestMapping(value= "/preUser/home", method = RequestMethod.POST)
-    public String createPreUserA(@RequestBody PreUserRequest preUserRequest){
-        preUserService.createPreUser(preUserRequest, "a");
-        return "success.html";
-    }
+    public String intro(){return "home2";}
 
     @RequestMapping(value= "/preUser", method = RequestMethod.POST)
     public String createPreUserB(@RequestBody PreUserRequest preUserRequest){
-        preUserService.createPreUser(preUserRequest, "b");
-        return "success.html";
+        preUserService.createPreUser(preUserRequest, "a");
+        return "success";
     }
+
+    @RequestMapping(value= "/preUser/home", method = RequestMethod.POST)
+    public String createPreUserA(@RequestBody PreUserRequest preUserRequest){
+        preUserService.createPreUser(preUserRequest, "b");
+        return "success";
+    }
+
+
 
 }
 //
