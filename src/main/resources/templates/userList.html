@@ -39,8 +39,8 @@
                 <td th:text="${row.id}"></td>
                 <td th:text="${row.type}"></td>
                 <td th:text="${row.phoneNum}"></td>
-                <td th:text="${row.url}"></td>
                 <td th:text="${row.createdDate}"></td>
+                <td th:text="${row.url}"></td>
             </tr>
             <tr th:unless="${not #lists.isEmpty( userList )}">
                 <td colspan="5">조회된 결과가 없습니다.</td>

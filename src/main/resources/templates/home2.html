@@ -54,7 +54,7 @@
 
 <body>
     <div class="floating-buttons">
-        <a href="https://www.instagram.com/dr.dozy_official/" class="icon-circle" target="_blank">
+        <a href="https://www.instagram.com/dozy_sleepeasy/" class="icon-circle" target="_blank">
         <i class="fab fa-instagram" aria-hidden="true"></i>
         </a>
         <a href="http://pf.kakao.com/_MWpVb" class="icon-circle2" target="_blank">
@@ -251,7 +251,7 @@
                 xhr.setRequestHeader(header, token);
             },
             success:function(data, jqXHR) {
-                window.open("success.html", '_blank').focus();
+                window.location.replace("success.html");
             },
             error:function(jqXHR,error) {alert(error)},
             complete:function(jqXHR) { }
@@ -391,8 +391,7 @@
 
     
     $(document).ready(function () {
-
-            var fv = $("#fullview").fullView({
+        var fv = $("#fullview").fullView({
             navbar: "#navbar",
             dots: true,
             dotsPosition: 'right',
@@ -402,28 +401,29 @@
             mouseScrolling: true,
             keyboardScrolling: true,
             onScrollEnd: function (currentView, preView) {
-              current = currentView[0].outerHTML.slice(16,17);
-              if (current != "1") {
-                  //$('.whole3').css({'display':'none'});
-              }
-              if (current == "2") {
+                current = currentView[0].outerHTML.slice(16,17);
+                if (current != "1") {
+                    //$('.whole3').css({'display':'none'});
+                }
+                if (current == "2") {
                     $('#fadein').css({'display':'block'});
-                    $('#slide').css({'display':'block'}); 
+                    $('#slide').css({'display':'block'});
                     $('#slide-right').css({'display':'block'});
                     $('#slide-last').css({'display':'block'});
+
                 }
-              else if (current == "3") {
+                else if (current == "3") {
                     $('#fadein2').css({'display':'block'});
-                   $('#zoomIn').css({'display':'block'});
+                    $('#zoomIn').css({'display':'block'});
                 }
-              else if (current == "4") {
+                else if (current == "4") {
                     $('#fadein3').css({'display':'block'});
                     $('#fadeinin').css({'display':'flex'});
                     $('#sliding').css({'display':'block'});
                     $('#sliding2').css({'display':'block'});
                     $('#sliding3').css({'display':'block'});
                 }
-              else if (current == "5") {
+                else if (current == "5") {
                     $('#fadein4').css({'display':'block'});
                     $('#final').css({'display':'block'});
                 }

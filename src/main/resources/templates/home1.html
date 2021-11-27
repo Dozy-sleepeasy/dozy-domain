@@ -52,7 +52,7 @@
 
 <body>    
     <div class="floating-buttons">
-        <a href="https://www.instagram.com/dr.dozy_official/" class="icon-circle" target="_blank">
+        <a href="https://www.instagram.com/dozy_sleepeasy/" class="icon-circle" target="_blank">
         <i class="fab fa-instagram" aria-hidden="true"></i>
         </a>
         <a href="http://pf.kakao.com/_MWpVb" class="icon-circle2" target="_blank">
@@ -231,11 +231,12 @@
             contentType: 'application/json; charset=UTF-8',
             data: JSON.stringify(form),
             dataType:"text",
+            // spring security를 위한 header 설정
             beforeSend : function(xhr){
                 xhr.setRequestHeader(header, token);
             },
             success:function(data, jqXHR) {
-                window.open("success.html", '_blank').focus();
+                window.location.replace("success.html");
             },
             error:function(jqXHR,error) {alert(error)},
             complete:function(jqXHR) { }

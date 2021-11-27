@@ -39,19 +39,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                     .antMatchers("/admin/**").hasRole("ADMIN")
                     .antMatchers("/**").permitAll()
                 .and()
-                    .requiresChannel()
-                    .antMatchers("/member/login").requiresSecure()
-                .and()
                     .formLogin()     // 로그인 설정
-                    .loginPage("/member/login")
-                    .failureUrl("/member/signup")
-                    .defaultSuccessUrl("/home")      // 로그인 성공 시 이동할 페이지
-                    .permitAll()
+                        .loginPage("/member/login")
+                        .failureUrl("/member/signup")
+                        .defaultSuccessUrl("/home")      // 로그인 성공 시 이동할 페이지
+                        .permitAll()
                 .and()
                     .logout()
-                    .logoutRequestMatcher(new AntPathRequestMatcher("/member/logout"))
-                    .logoutSuccessUrl("/member/login")
-                    .invalidateHttpSession(true)    // 세션 초기화
+                        .logoutRequestMatcher(new AntPathRequestMatcher("/member/logout"))
+                        .logoutSuccessUrl("/member/login")
+                        .invalidateHttpSession(true)    // 세션 초기화
                 .and()
                     .exceptionHandling();
     }
