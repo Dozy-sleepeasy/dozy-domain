@@ -5,8 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.view.RedirectView;
 import pluviophile.domain.domain.PreUser;
 import pluviophile.domain.dto.MemberDto;
 import pluviophile.domain.service.MemberService;
@@ -29,10 +28,10 @@ public class MemberController {
     }
 
     @PostMapping("/member/signup")
-    public String signup(MemberDto memberDto) {
+    public RedirectView signup(MemberDto memberDto) {
         memberService.signUp(memberDto);
 
-        return "redirect:/member/login";
+        return new RedirectView("/member/login");
     }
 
     @GetMapping("/member/login")
