@@ -54,11 +54,8 @@
 
 <body>
     <div class="floating-buttons">
-        <a href="https://www.instagram.com/dozy_sleepeasy/" class="icon-circle" target="_blank">
+        <a href="https://www.instagram.com/dr.dozy_official/" class="icon-circle" target="_blank">
         <i class="fab fa-instagram" aria-hidden="true"></i>
-        </a>
-        <a href="http://pf.kakao.com/_MWpVb" class="icon-circle2" target="_blank">
-        <i class="fas fa-comment" aria-hidden="true"></i>
         </a>
     </div>
     <div class="logo">
@@ -95,10 +92,9 @@
             
             <div class="toge">
             <div class="lefty" id="fadein" style="animation-delay: 0.2s;animation-duration: 1s;">
-                <h3>깊은 잠을 만드는 <br> 
-                        Dr.Dozy의 ASMR </h3>
-                <p>도지가 직접 개발한 수면 유도 소리, <br> 
-                    모노럴비트를 통해 쉽고 빠르게 깊은 잠으로 안내합니다. </p>
+                <h3>Get deep sleep with <br> 
+                        Dr. Dozy’s ASMR </h3>
+                <p>Sleep inducing sounds and monaural beats created personally by Dozy will guide you to quality sleep quickly and easily.</p>
             </div>
             <div class="righty2">
                 <img id="slide" style="animation-delay: 0.3s;animation-duration: 1.4s;" src="src/first.png">
@@ -114,11 +110,8 @@
         <div id="section3" data-tooltip="Section 3 Title">
             <div class="toge">
             <div class="lefty">
-                <h3>똑똑한 Dr.Dozy가 
-                      <br> 
-                       측정하는 수면 사이클</h3>
-                <p>내가 얼마나 잘 자고 있는지, <br>
-닥터도지의 똑똑한 인공지능이 수면 사이클을 측정합니다. </p>
+                <h3>Track your sleep cycle with <br> the smart Dr. Dozy</h3>
+                <p>Dr. Dozy’s smart Artificial Intelligence checks how well you sleep by tracking your sleep cycle. </p>
             </div>
             <div class="righty2">
                 <img id="zoomIn" src="src/graph3.png">
@@ -131,11 +124,8 @@
         <div id="section4" data-tooltip="Section 4 Title">
             <div class="toge">
             <div class="lefty">
-                <h3>Dr.Dozy가 알려주는
-                      <br> 
-                       나를 위한 수면 솔루션 </h3>
-                <p>나만의 맞춤형 수면 레포트를 통해  <br>
-좋은 잠을 위한 수면 솔루션을 제공해드려요. </p>
+                <h3>Get personalized sleep solutions <br> from Dr. Dozy </h3>
+                <p>We provide you with solutions to help you get a good night’s sleep through personalized sleep reports. </p>
             </div>
             <div class="righty2">
                 <div class="imgtable" id="fadeinin">
@@ -151,11 +141,8 @@
         <div id="section5" data-tooltip="Section 5 Title">
             <div class="toge">
             <div class="lefty">
-                <h3>Dr.Dozy의 특별한 
-                  <br> 
-                   스마트 알람</h3>
-                <p>가장 개운하게 일어날 수 있도록,  <br>
-닥터 도지가 최적의 기상 시간을 찾아드려요. </p>
+                <h3>Dr. Dozy’s special <br> smart alarm</h3>
+                <p>Dr. Dozy finds you the optimal time to wake up feeling refreshed. </p>
             </div>
             <div class="righty2">
                 <img src="src/alarm3.png" id="final" >
@@ -166,9 +153,9 @@
             
         <div id="section6" data-tooltip="Section 6 Title">
         <div class="whole">
-        <h4>가장 먼저 사용해보세요</h4>
+        <h4>Get first.</h4>
         <h3>
-            사전예약하고 30일간 무료 프리미엄 케어 받기</h3>
+            Pre-reserve now and get a 30-day premium care free trial.</h3>
         <div class="rest">
 
         <h2 id="demo"></h2> 
@@ -182,12 +169,12 @@
         <input type="checkbox" value="android" id="android" name="android">Android<span class="checkmark"></span></label>
         </div>
         <div class="buttons2">
-        <input type="tel" placeholder="휴대폰 번호 11자리 입력" id="telnum" name="telnum">
-        <input type="button" name="name" value="예약하기" id="send" onclick="sendEmail()" ></div>
+        <input type="tel" placeholder="Email Address" id="telnum" name="telnum">
+        <input type="button" name="name" value="Send" id="send" onclick="sendEmail()" ></div>
         
         <div class="checkboxone">
         <label class="container low" style="color:#999da0;">
-        <input type="checkbox" value="iOS" id="iOS" checked="checked">(주)플루비오파일이 고객님의 개인정보 수집/이용함에 동의합니다.<span class="checkmark"></span></label></div></form>
+        <input type="checkbox" value="iOS" id="iOS" checked="checked">I agree to Pluviophile Co., Ltd.’s collection/use of my personal information.<span class="checkmark"></span></label></div></form>
             </div>
         </div>
         <a id="down" class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
@@ -224,12 +211,12 @@
 
         // 양식 검증 : 빈칸이 있는지 체크 + 이메일 양식 체크
         if(type === ''){
-            alert('핸드폰 기종을 선택해 주세요.')
+            alert('Please select your phone type')
             return;
         }
 
         if(phoneNum === ''){
-            alert('전화번호를 입력해 주세요.')
+            alert('Please enter your email address')
             return;
         }
         var url = window.location.href;
@@ -310,7 +297,7 @@
     }
         
     // Set the date we're counting down to
-    var countDownDate = new Date("Dec 17, 2021 20:00:00").getTime();
+    var countDownDate = new Date("Jan 1, 2022 20:00:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -339,7 +326,7 @@
       // If the count down is over, write some text 
       if (distance < 0) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "사전예약 종료";
+        document.getElementById("demo").innerHTML = "End of Pre-launch";
       }
     }, 1000);
         var current = "";
