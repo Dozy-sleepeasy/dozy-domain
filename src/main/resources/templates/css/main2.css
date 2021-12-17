@@ -797,7 +797,7 @@ h3 {
 .floating-buttons {
     position: fixed;
     width: 40px;
-    height: 50px;
+    height: 150px;
     bottom: 20px;
     right: 20px;
     color: #FFF;
@@ -882,6 +882,19 @@ h3 {
 	text-align: center;
 	font-size: 50px;
 	z-index: 100;
+}
+
+.start2 {
+    width: 220px;
+	margin: 0px 0 0 0px;
+	line-height: 12px;
+	position: absolute;
+	bottom: 100px;
+    left: 50px;
+	text-align: left;
+	font-size: 10px;
+	z-index: 100;
+    color: #333;
 }
 
 button.start_bt {
