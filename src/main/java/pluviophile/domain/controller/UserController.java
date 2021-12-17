@@ -22,6 +22,9 @@ public class UserController {
     @GetMapping("/home")
     public String intro(){return "home2";}
 
+    @GetMapping("/homeen")
+    public String engHome(){return "home2_en";}
+
     @RequestMapping(value= "/preUser", method = RequestMethod.POST)
     public String createPreUserB(@RequestBody PreUserRequest preUserRequest){
         preUserService.createPreUser(preUserRequest, "a");
